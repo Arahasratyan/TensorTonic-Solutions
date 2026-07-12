@@ -16,7 +16,7 @@ def impute_missing(X, strategy='mean'):
             else:
                 replace = np.median(X[valid_X])
         else:
-            replace = np.zeros(X.shpae[0])
+            replace = np.zeros(X.shape[0])
 
         X[nan_X] = replace
         return X
